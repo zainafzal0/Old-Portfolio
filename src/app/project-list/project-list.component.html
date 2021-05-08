@@ -1,0 +1,112 @@
+
+  <div class="container centerProject" data-aos="zoom-in">
+    <div class="row">
+      <div class="col-sm col-xxl-4" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" *ngFor="let projects of projectList;let i=index">
+        <div class="card" (click)="setModalIndex(i)" data-bs-toggle="modal" data-bs-target="#projectModal" style="width: 40rem; ">
+            <img src="{{projects.picID}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{projects.name}}</h5>
+            </div>
+          </div>
+      </div>
+      
+      
+    </div>
+  </div>
+
+
+  <div class="modal fade " id="projectModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">{{projectList[modalIndex].name}}</h5>
+          <button type="button" class="btn-close"  data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active carouselBtn" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="{{projectList[modalIndex].imageSlides.pic1ID}}" class="d-block mx-auto" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="{{projectList[modalIndex].imageSlides.pic2ID}}" class="d-block mx-auto" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="{{projectList[modalIndex].imageSlides.pic3ID}}" class="d-block mx-auto" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          
+                 
+          <p class="modalDescription">{{projectList[modalIndex].description}}</p>
+          
+        </div>
+        <div class="container-modalEnd">
+          <div>
+            <mat-chip-list
+          class="example-chip">
+          <mat-chip
+            class="example-box"
+            cdkDrag
+            *ngFor="let skills of projectList[modalIndex].skills">
+            {{skills}}
+          </mat-chip>
+        </mat-chip-list>
+
+          </div>
+          <div>
+            <a class="modalLinks" href="{{projectList[modalIndex].githubLink}}"
+          target="_blank"><i class="fa fa-link fa-4x" aria-hidden="true"></i>
+                  </a>
+          </div>
+          
+        </div>
+        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary"  data-bs-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Modal
+<div class="modal fade" id="projectModa1l" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">{{projectList[modalIndex].name}}</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="{{projectList[modalIndex].picID}}" class="modalImage" alt="...">
+        <p class="modalDescription">{{projectList[modalIndex].description}}</p>
+        <a class="modalLinks" href="{{projectList[modalIndex].githubLink}}"
+                  ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
+                    <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
+                    <path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
+                  </svg></a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+

@@ -1,0 +1,210 @@
+<div class="all-content">
+  <div id="background"></div>
+  <div id="sideBarAnimation" class="sidebar">
+    <section class="side">
+      <ul class="navBar">
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#aboutMe">About Me</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact-me">Contact Me</a></li>
+      </ul>
+    </section>
+  </div>
+
+  <div class="content">
+    <div id="intro-section"></div>
+
+    <div>
+      <section class="About-Me" id="aboutMe" data-aos="fade">
+        <h1 class="sectionTitle">About Me</h1>
+        <div class="gradientLine"></div>
+        <div class="about-content">
+          <img
+            id="picOfMe"
+            src="assets/zain.png"
+            alt="Picture of Me"
+            data-aos="fade-right"
+          />
+          <p id="picText" data-aos="fade-left">
+            Hi, my name is Zain and I am currently a first year Software
+            Engineering student studying at the University of Waterloo<br />
+            <br />
+            I am passionate about creating and programming various softwares,
+            whether that be websites, applications, or anything else.
+          </p>
+        </div>
+        <div class="skills" data-aos="fade-up" data-aos-anchor="#picOfMe">
+          <h2 class="secondTitle">Skills</h2>
+          <p class="skillList">
+            Java | C++ | Python | C | C# | JavaScript | HTML | CSS | Angular |
+            React
+          </p>
+        </div>
+
+        <div class="resume" data-aos="fade-up" data-aos-anchor="#picOfMe">
+          <a class="download" href="assets/zain-resume.pdf" download="Resume"
+            >Download Resume</a
+          >
+        </div>
+      </section>
+    </div>
+
+    <div>
+      <section
+        class="Experience"
+        id="experience"
+        data-aos="fade"
+        data-scroll-section
+      >
+        <h1 class="sectionTitle">Experience</h1>
+        <div class="gradientLine"></div>
+        <div class="experience-content">
+          <div class="nze-content" data-aos="fade-left">
+            <img
+              class="nzeLogo"
+              src="assets/nzecanada.png"
+              alt="Net Zero Energy Inc. Logo"
+            />
+            <h2>Net Zero Energy Inc.</h2>
+            <h3>Front-End Developer</h3>
+            <ul id="nzeText">
+              <li>
+                Developed new website for a starting company, worked on
+                front-end by using languages such as <strong>HTML</strong>,
+                <strong>CSS</strong> and <strong>JavaScript</strong>
+              </li>
+              <li>
+                Designed and created the Homepage, About us, Services, and
+                Projects/Featured Projects pages.
+              </li>
+              <li>
+                Increased how much monthly projects the company gained by around
+                30%
+              </li>
+            </ul>
+          </div>
+
+          <div class="abs-content" data-aos="fade-right">
+            <img
+              class="absLogo"
+              src="assets/abslogo.png"
+              alt="Advanced Building Solutions Logo"
+            />
+            <h2>Advanced Building Solutions Inc.</h2>
+            <h3>Energy Modeller</h3>
+            <ul id="nzeText">
+              <li>
+                Performed detailed energy modelling and evaluation of complex
+                building systems on prestigious municipal projects, using in
+                depth knowledge of simulation softwares such as
+                <strong>eQUEST</strong> and <strong>EE4</strong>
+              </li>
+              <li>
+                Project examples include: Monaco (263 Hurontario Street), Upper
+                Vista (7711 Green Vista Gate), East Junction (394 Symington
+                Avenue).
+              </li>
+              <li>
+                Gained strong <strong>Auto CAD</strong> and
+                <strong>Excel</strong> skills by drawing complex zoning
+                floorplans and performing excel take-off for various projects.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div>
+      
+      <section class="Projects" id="projects">
+        <h1 class="sectionTitle" data-aos="fade">Projects</h1>
+        <div class="gradientLine" data-aos="fade"></div>
+
+        <app-project-list></app-project-list>
+        
+        <!-- <div class="projectsGrid" data-aos="fade-up">
+          <div class="heroIndex" data-aos="zoom-in">
+            <div class="heroIndex-front">
+              <img id="heroIndexVid" src="assets/connectFour.gif" />
+              <h2>Hero Index</h2>
+            </div>
+
+            <div class="heroIndex-back">
+              <h2>Hero Index</h2>
+              <h3><br />Developed using Java and Android Studio</h3>
+              <h3><br /><br />Check It Out Here</h3>
+              <div class="heroIndex-links">
+                <a href="https://zainafzal0.github.io/hero-index"
+                  ><i class="fa fa-github fa-4x"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="connectFour" data-aos="zoom-in">
+            <div class="connectFour-front">
+              <img id="connectFourVid" src="assets/connectFour.gif" />
+              <h2>Connect Four</h2>
+            </div>
+
+            <div class="connectFour-back">
+              <h2>Connect Four</h2>
+              <h3><br />Developed using Java and Android Studio</h3>
+              <h3><br /><br />Check It Out Here</h3>
+              <div class="connectFour-links">
+                <a href="https://github.com/zainafzal0/ConnectFour"
+                  ><i class="fa fa-github fa-4x"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="streetFighter" data-aos="zoom-in">
+            <div class="streetFighter-front">
+              <img id="streetFighterVid" src="assets/streetFighter.gif" />
+              <h2>Street Fighter</h2>
+            </div>
+
+            <div class="streetFighter-back">
+              <h2>Street Fighter</h2>
+
+              <h3>
+                <br />Developed using Java and Object Oriented Programming and
+                created a interactive GUI aside with many animations
+              </h3>
+              <h3><br /><br />Check It Out Here</h3>
+              <div class="connectFour-links">
+                <a href="https://github.com/zainafzal0/Street-Brawler"
+                  ><i class="fa fa-github fa-4x"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </section>
+    </div>
+
+    <div class="contact-me">
+      <section class="Contact" id="contact-me" data-aos="fade">
+        <h1 class="sectionTitle">Contact Me</h1>
+        <div class="connectFour-links">
+          <a
+            class="contact-links"
+            href="https://www.linkedin.com/in/zainafzal0/"
+            ><i class="fa fa-linkedin fa-4x"></i
+          ></a>
+          <a class="contact-links" href="mailto:zain.afzal@uwaterloo.ca"
+            ><i class="fa fa-envelope fa-4x"></i
+          ></a>
+          <a class="contact-links" href="https://github.com/zainafzal0"
+            ><i class="fa fa-github fa-4x"></i
+          ></a>
+          
+        </div>
+        
+      </section>
+      <div class="copyRight"><p >Created by Zain Afzal. © 2021</p></div>
+    </div>
+  </div>
+</div>
